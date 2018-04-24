@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "@digitregroup/eslint-config",
+    "@digitregroup/eslint-config/rules/lambda",
+    "@digitregroup/eslint-config/rules/es6"
+  ]
+}
