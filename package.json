@@ -22,7 +22,8 @@
     "test": "nyc mocha ./test/*.js",
     "test:ci": "nyc mocha ./test/*.js --reporter=mocha-junit-reporter --reporter-options mochaFile=./reports/junit.xml",
     "report-coverage": "nyc report --reporter=text-lcov | coveralls",
-    "nsp": "nsp check"
+    "nsp": "nsp check",
+    "changelog": "auto-changelog -l false"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "@digitregroup/eslint-config": "^1.7.0",
+    "auto-changelog": "^1.4.6",
     "chai": "^4.1.2",
     "coveralls": "^3.0.0",
     "eslint": "^4.16.0",
