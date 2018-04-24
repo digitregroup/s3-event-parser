@@ -4,7 +4,9 @@
 
 Parse AWS S3/SNS events from your Lambda function.
 
-Note: This only work for single file S3 events. (One event per file).
+Notes: 
+* This only work for single file S3 events. (One event per file).
+* Work only in nodeJS v8.10 (because of JOI requirement)
 
 ## Install
 
