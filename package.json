@@ -4,25 +4,34 @@
   "description": "Parse AWS S3/SNS events",
   "author": "DigitRE group",
   "keywords": [
-    "digitregroup",
+    "lambda",
     "s3",
-    "aws"
+    "aws",
+    "event",
+    "parser",
+    "serverless"
   ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.10"
+  },
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix .",
     "lint:ci": "eslint . --format junit --output-file ./reports/eslint.xml",
     "test": "nyc mocha ./test/*.js",
-    "test:ci": "nyc mocha ./test/*.js --reporter=html --reporter=mocha-junit-reporter --reporter-options mochaFile=./reports/junit.xml",
+    "test:ci": "nyc mocha ./test/*.js --reporter=mocha-junit-reporter --reporter-options mochaFile=./reports/junit.xml",
+    "report-coverage": "nyc report --reporter=text-lcov | coveralls",
     "nsp": "nsp check"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/digitregroup/s3-event-parser.git"
+    "url": "https://github.com/digitregroup/s3-event-parser"
   },
   "devDependencies": {
     "@digitregroup/eslint-config": "^1.7.0",
     "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
     "eslint": "^4.16.0",
     "mocha": "^5.0.5",
     "mocha-junit-reporter": "^1.17.0",

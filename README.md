@@ -1,6 +1,8 @@
 # S3 Event Parser
 
+[![npm version](https://badge.fury.io/js/%40digitregroup%2Fs3-event-parser.svg)](https://badge.fury.io/js/%40digitregroup%2Fs3-event-parser)
 [![CircleCI](https://circleci.com/gh/digitregroup/s3-event-parser.svg?style=svg)](https://circleci.com/gh/digitregroup/s3-event-parser)
+[![Coverage Status](https://coveralls.io/repos/github/digitregroup/s3-event-parser/badge.svg?branch=master)](https://coveralls.io/github/digitregroup/s3-event-parser?branch=master)
 
 Parse AWS S3/SNS events from your Lambda function.
 

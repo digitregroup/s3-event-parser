@@ -116,6 +116,10 @@ jobs:
             mkdir -p ./reports
             yarn test:ci
 
+      - run:
+          name: Send coverage reports
+          command: yarn report-coverage
+
       - store_test_results:
           path: ./reports
       - store_artifacts:
